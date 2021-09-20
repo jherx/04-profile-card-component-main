@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile card component</title>
+  </head>
+  <body>
+    <div class="bg-container">
+      <img class="bg-1" src="images/bg-pattern-top.svg" alt="background"/>
+      <img class="bg-2"src="images/bg-pattern-bottom.svg" alt="background"/>
+    </div>
   
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main class="main-container">
+      <section class="card">
+        <div class="card__top-bg"></div>
+        <div class="card__header">
+  
+          <img class="card__avatar" src="images/image-victor.jpg" alt="Victor avatar" />
+            <div class="card__user">
+                <h1>
+                    <span class="bold text-v-large">Victor Crest</span>
+                    <span class="subtitle text-medium">26</span>
+                </h1>
+                  <span class="subtitle text-medium">London</span>
+            </div>
+        </div>
+  
+        <div class="card__stats">
+          <div class="card__followes">
+            <p class="bold text-large">80K</p> 
+            <span class="subtitle text-small">Followers</span>
+          </div>
+          <div class="card__likes">
+            <p class="bold text-large">803K</p>
+            <span class="subtitle text-small">Likes</span>
+          </div>
+          <div class="card__photos">
+            <p class="bold text-large">1.4K</p>
+            <span class="subtitle text-small">Photos</span>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+   
+  </body>
 </html>
